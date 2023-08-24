@@ -24,7 +24,7 @@
 document.addEventListener('WeixinJSBridgeReady', function() {
     alert(13);
     alert(document.getElementById('video').play ? "true": "false")
-    alert(document.getElementById('video').play);
+    alert(JSON.stringify(document.getElementById('video').play));
     document.getElementById('video').play()
 
 });
