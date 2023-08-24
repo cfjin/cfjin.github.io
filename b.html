@@ -18,6 +18,7 @@
     <source src="https://static.yximgs.com/udata/pkg/fe/kwai_video.a7616d99.mp4" type="video/mp4">
   <p>2222</p>
 </video>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
 <script>
 // 这里使用了微信自带的WeixinJSBridgeReady事件
 
@@ -25,7 +26,10 @@ document.addEventListener('WeixinJSBridgeReady', function() {
     alert(13);
     alert(document.getElementById('video').play ? "true": "false")
     alert(JSON.stringify(document.getElementById('video').play));
-    document.getElementById('video').play()
+    setTimeout(() => {
+        document.getElementById('video').play()
+    }, 500);
+
 
 });
 
