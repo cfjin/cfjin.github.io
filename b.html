@@ -23,9 +23,7 @@
 // 这里使用了微信自带的WeixinJSBridgeReady事件
 
 document.addEventListener('WeixinJSBridgeReady', function() {
-    alert(13);
-    alert(document.getElementById('video').play ? "true": "false")
-    alert(JSON.stringify(document.getElementById('video').play));
+    alert(document.getElementById('video').play);
     setTimeout(() => {
         document.getElementById('video').play()
     }, 500);
